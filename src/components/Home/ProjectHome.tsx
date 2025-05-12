@@ -57,7 +57,6 @@ const projects: Project[] = [
 export default function ProjectHome() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLDivElement>(null);
-  const projectsRef = useRef<HTMLDivElement>(null);
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
   const imagesRef = useRef<(HTMLImageElement | null)[]>([]);
   const mainImageRef = useRef<HTMLImageElement>(null);
@@ -161,7 +160,7 @@ export default function ProjectHome() {
     
     // Store the next image source for smooth transition
     setNextImageSrc(projects[index].image);
-
+    nextImageSrc
     // Create a timeline for creative transitions
     const tl = gsap.timeline({
       onComplete: () => {

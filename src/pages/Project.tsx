@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 // Import project data from centralized file
 import projectsData from '../data/projectsData';
 import type { Project } from '../data/projectsData';
+// Import the building1 image from projectsData for the background
+import building1 from "../assets/Images/Home/ProjectHome/est5.jpg";
 
 export default function Project() {
   const [activeFilter, setActiveFilter] = useState<string>("all");
@@ -69,8 +71,9 @@ export default function Project() {
     return isVisible;
   };
 
-  const isProjectsVisible = useScrollAnimation(projectsRef);
-  const isFilterVisible = useScrollAnimation(filterRef);
+  // We're using the hook but not the return value, so we'll just call the hook
+  useScrollAnimation(projectsRef);
+  useScrollAnimation(filterRef);
   
   // Handle card hover
   const handleCardHover = (id: number | null) => {

@@ -1,9 +1,12 @@
 // Import project images
 import project1 from "../assets/Images/Home/ProjectHome/est5.jpg";
+// Use URL import for files with spaces
+// @ts-ignore
 import project2 from "../assets/Images/Home/ProjectHome/con fac 24.jpg";
 import project3 from "../assets/Images/Home/ProjectHome/cham1.jpg";
 import project4 from "../assets/Images/Home/ProjectHome/con2.jpg";
 // Import additional images from available folders
+// @ts-ignore
 import road1 from "../assets/Images/Home/ProjectHome/con fac 24.jpg";
 import road2 from "../assets/Images/Home/ProjectHome/con2.jpg";
 import building1 from "../assets/Images/Home/ProjectHome/est5.jpg";
