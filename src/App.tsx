@@ -1,11 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
-import Home from './pages/Home'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
+import Home from './pages/Home'
 import Project from './pages/Project'
 import ProjectDetails from './pages/projectdetails'
-import ScrollToTop from './components/ScrollToTop'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route path='/' element={<Home/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/contact' element={<Contact/>}/>
             <Route path='/projects' element={<Project/>}/>
             <Route path='/project/:id' element={<ProjectDetails/>}/>
           </Routes>

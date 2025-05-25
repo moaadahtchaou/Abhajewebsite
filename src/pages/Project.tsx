@@ -124,14 +124,19 @@ export default function Project() {
         </div>
         
         {/* Wave divider */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+                {/* Wave divider with multiple waves */}
+                <div className="absolute bottom-0 left-0 w-full overflow-hidden">
           <svg 
-            className="relative block w-full h-[50px]" 
-            viewBox="0 0 1200 120" 
+            className="relative block w-full h-[80px] translate-y-[1px]" 
+            viewBox="0 0 1440 120" 
             preserveAspectRatio="none"
             fill="#F9FAFB"
           >
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C0,0,0,0,0,0S151.79,32.3,321.39,56.44Z"></path>
+            <path 
+              d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+              fillOpacity="1"
+            ></path>
+
           </svg>
         </div>
       </div>
