@@ -79,7 +79,7 @@ export default function NotFound() {
       </div>
 
       {/* Enhanced Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
