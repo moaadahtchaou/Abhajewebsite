@@ -8,7 +8,7 @@ import Project from './pages/Project'
 import ProjectDetails from './pages/projectdetails'
 import About from './pages/About'
 import Contact from './pages/Contact'
-
+import NotFound from './pages/Notfound'
 function App() {
 
   return (
@@ -21,6 +21,7 @@ function App() {
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/projects' element={<Project/>}/>
             <Route path='/project/:id' element={<ProjectDetails/>}/>
+            <Route path='*' element={<NotFound/>}/>
           </Routes>
           <Footer/>
 

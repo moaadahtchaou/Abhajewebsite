@@ -56,33 +56,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Nos Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/services#routiers" className="text-sm text-gray-500 hover:text-blue-500">
-                  Travaux Routiers
-                </Link>
-              </li>
-              <li>
-                <Link to="/services#batiments" className="text-sm text-gray-500 hover:text-blue-500">
-                  Bâtiments
-                </Link>
-              </li>
-              <li>
-                <Link to="/services#techniques" className="text-sm text-gray-500 hover:text-blue-500">
-                  Lots Techniques
-                </Link>
-              </li>
-              <li>
-                <Link to="/services#secondaires" className="text-sm text-gray-500 hover:text-blue-500">
-                  Lots Secondaires
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contactez-Nous</h3>

@@ -1,7 +1,7 @@
-import  { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { FaUsers, FaBuilding, FaRoad } from 'react-icons/fa';
+import { FaUsers, FaMedal, FaHandshake, FaChartLine, FaBuilding, FaRoad } from 'react-icons/fa';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
